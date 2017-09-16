@@ -1,7 +1,7 @@
 Images are blueprints for containers. You can think of images as source code
 and containers as running instances of that source code.
 
-You can get images from the DockerHub or you can build your own.
+You can get images from the DockerHub or you can you write them from scratch.
 
 ===
 

@@ -1,6 +1,8 @@
 FROM python:3.6
 
-RUN pip install Flask
+EXPOSE 7000
+
+RUN pip install Flask==0.12.2
 
 COPY hello.py /src/
 WORKDIR /src
