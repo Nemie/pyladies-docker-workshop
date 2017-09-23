@@ -1,0 +1,14 @@
+version: '2'
+services:
+  hello_flask:
+    build: .
+    ports:
+      - "7000:7000"
+    depends_on:
+      - db
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: "docker_db"
+    volumes:
+      - ./db_data:/var/lib/postgresql
