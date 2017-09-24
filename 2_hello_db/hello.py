@@ -13,7 +13,8 @@ def hello_pyladies():
 @app.route('/db')
 def hello_db():
     try:
-        db = create_engine('postgresql://postgres:postgres@db:5432/docker_db')
+        # postgresql://<user>:<password>@<host>:5432/<database_name>
+        db = create_engine('')
         result = db.execute('SELECT 1').first()
         if result and result[0] == 1:
             return 'Connected to the database \\o/'
