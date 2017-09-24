@@ -1,0 +1,6 @@
+version: '2'
+services:
+  hello_flask:
+    build: .
+    ports:
+      - "7000:7000"
