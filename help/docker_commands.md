@@ -16,3 +16,11 @@ Docker cheatsheet
 `docker images` _list images_
 
 `docker rmi <image name>` _delete image_
+
+`docker-compose up` _start containers defined in docker-compose.yml_
+
+`docker-compose stop` _stop containers defined in docker-compose.yml_
+
+`docker-compose build` _build defined in docker-compose.yml_
+
+`docker-compose rm` _destroy stopped containers_
